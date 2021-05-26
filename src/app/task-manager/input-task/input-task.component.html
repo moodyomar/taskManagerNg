@@ -1,0 +1,9 @@
+<h1 class="display-1 my-5">Task app</h1>
+<div class="col-md-6">
+  <label>Name task:</label>
+  <input [(ngModel)]="taskInput" class="form-control" type="text" >
+  <label>Time task:</label>
+  <input [(ngModel)]="timeInput" class="form-control" type="time" >
+  <button (click)="addTask()" class="btn btn-info mt-3 me-2">Add task</button>
+  <button (click)="resetTasks()" class="btn btn-danger mt-3  ">reset tasks</button>
+</div>
