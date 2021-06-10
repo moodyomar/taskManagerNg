@@ -10,6 +10,6 @@ nav a:hover{
 }
 
 nav a.active{
-  color:aqua;
+  color:rgb(255, 149, 0);
   font-weight: bold;
 }

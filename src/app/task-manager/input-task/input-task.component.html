@@ -1,9 +1,14 @@
-<h1 class="display-1 my-5">Task app</h1>
-<div class="col-md-6">
+<h1 class="display-1 my-5 text-center">Task app</h1>
+<div class="col-md-6 mx-auto">
   <label>Name task:</label>
-  <input [(ngModel)]="taskInput" class="form-control" type="text" >
+<div class="d-flex align-items-center justify-content-between">
+    <input [(ngModel)]="taskInput" class="form-control " type="text" placeholder="Hit the gym">
+  <button (click)="addTask()" class="btn btn-success m-2"><i class="fa fa-plus" aria-hidden="true"></i>
+  </button>
+</div>
   <label>Time task:</label>
-  <input [(ngModel)]="timeInput" class="form-control" type="time" >
-  <button (click)="addTask()" class="btn btn-info mt-3 me-2">Add task</button>
-  <button (click)="resetTasks()" class="btn btn-danger mt-3  ">reset tasks</button>
+  <div class="d-flex align-items-center justify-content-between">
+  <input [(ngModel)]="timeInput" class="form-control w-50" type="time" >
+  <button (click)="resetTasks()" class="btn btn-danger m-2 w-50 ">Reset All Tasks</button>
+</div>
 </div>
