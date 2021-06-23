@@ -1,12 +1,12 @@
-<h1 class="display-1 my-5 text-center">Task app</h1>
+<h1 class="display-1 my-5 text-center">Reminder App</h1>
 <div class="col-md-6 mx-auto">
-  <label>Name task:</label>
+  <label>Task Name :</label>
 <div class="d-flex align-items-center justify-content-between">
-    <input [(ngModel)]="taskInput" class="form-control " type="text" placeholder="Hit the gym">
+    <input [(ngModel)]="taskInput" class="form-control " type="text" placeholder="Remind me to..">
   <button (click)="addTask()" class="btn btn-success m-2"><i class="fa fa-plus" aria-hidden="true"></i>
   </button>
 </div>
-  <label>Time task:</label>
+  <label>Task Time :</label>
   <div class="d-flex align-items-center justify-content-between">
   <input [(ngModel)]="timeInput" class="form-control w-50" type="time" >
   <button (click)="resetTasks()" class="btn btn-danger m-2 w-50 ">Reset All Tasks</button>

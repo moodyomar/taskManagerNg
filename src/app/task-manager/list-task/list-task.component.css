@@ -1,0 +1,10 @@
+.borderRadius{
+  border-radius: 35px;
+}
+.time{
+  color: #777;
+}
+.complete{
+background-color: yellow;
+  transition: all .25s ease-in;
+}
